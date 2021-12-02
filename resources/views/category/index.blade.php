@@ -37,7 +37,7 @@
                                     <td>{{ $category->created_at_with_format }}</td>
                                     <td>{{ $category->updated_at_with_format }}</td>
                                     <td class="text-center">
-                                        <a href="{{ route('category.edit', ['id' => $category->id]) }}" class="btn btn-primary">Edit</a>
+                                        <a href="{{ route('category.edit', ['id' => $category->id]) }}" class="btn btn-warning">Edit</a>
                                         @component('components.delete')
                                             @slot('url')
                                                 {{ route('category.delete', ['id' => $category->id]) }}
